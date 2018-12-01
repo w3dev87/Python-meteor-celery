@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block content %}
+<form id="upload-image" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="token">password</label>
+            <input name="token" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="imageName">imageName</label>
+            <input name="imageName" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="userId">userId</label>
+            <input name="userId" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="file">Select an image</label>
+            <input name="file" type="file">
+        </fieldset>
+        <fieldset>
+            <button id="upload-image-btn" type="button">Upload</button>
+        </fieldset>
+    </form>
+{% endblock %}

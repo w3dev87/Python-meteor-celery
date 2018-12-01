@@ -1,0 +1,14 @@
+flask
+flask-cors
+psycopg2
+peewee
+werkzeug
+phonenumbers
+loggly-python-handler
+pymongo
+redis
+twilio
+python-resize-image
+tinys3
+requests
+celery

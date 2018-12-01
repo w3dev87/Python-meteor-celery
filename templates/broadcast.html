@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% block content %}
+<form id="broadcast-form" method="post">
+        <fieldset>
+            <label for="groupId">Group selection</label>
+            <input name="groupId" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="message">Message</label>
+            <input name="message" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="locale">Locale</label>
+            <select name="locale">
+              <option value="San Francisco">San Francisco</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="New York">New York</option>
+              <option value="Washington D.C.">Washington D.C.</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="userId">userId</label>
+            <input name="userId" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="token">Token</label>
+            <input name="token" type="text">
+        </fieldset>
+        <fieldset>
+            <label for="file">Select a file</label>
+            <input name="file" type="file">
+        </fieldset>
+        <fieldset>
+            <button id="broadcast-btn" type="button">Broadcast</button>
+        </fieldset>
+    </form>
+{% endblock %}
